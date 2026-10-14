@@ -10,7 +10,7 @@
     >
 
     <title>Omnidex</title>
-    <link rel="icon" type="image/png" href="./assets/images/favicon-omnitrix.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon-omnitrix-optimized.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
         rel="stylesheet"
     >
-    <link rel="stylesheet" href="./assets/css/style.css?v=11">
+    <link rel="stylesheet" href="./assets/css/style.css?v=13">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
             <h1>
                 <img
                     class="brand-logo"
-                    src="./assets/images/icon.png"
+                    src="./assets/images/icon-optimized.png"
                     alt="Omnidex"
                 >
             </h1>
@@ -107,7 +107,7 @@
                 <img
                     class="omnitrix-image"
                     id="omnitrixImage"
-                    src="./assets/images/omnitrix.png"
+                    src="./assets/images/omnitrix-optimized.png"
                     alt="Omnitrix"
                 >
 
@@ -169,6 +169,7 @@
                 aria-pressed="false"
                 title="Ativar Omnitrix"
             ></button>
+            <span class="activation-hint">ATIVAR OMNITRIX</span>
         </div>
 
 
@@ -234,96 +235,96 @@
                      HABILIDADES
                 ====================================== -->
 
-                <article class="info-card">
+                <details class="info-card">
 
-                    <div class="card-title">
+                    <summary class="card-title">
 
                         <span class="icon">
                             01
                         </span>
 
-                        <h3>
+                        <span class="card-heading" role="heading" aria-level="3">
                             HABILIDADES
-                        </h3>
+                        </span>
 
-                    </div>
+                    </summary>
 
 
                     <ul id="alienAbilities"></ul>
 
-                </article>
+                </details>
 
 
                 <!-- =====================================
                      APARÊNCIA
                 ====================================== -->
 
-                <article class="info-card">
+                <details class="info-card">
 
-                    <div class="card-title">
+                    <summary class="card-title">
 
                         <span class="icon">
                             02
                         </span>
 
-                        <h3>
+                        <span class="card-heading" role="heading" aria-level="3">
                             APARÊNCIA
-                        </h3>
+                        </span>
 
-                    </div>
+                    </summary>
 
 
                     <p id="alienAppearance"></p>
 
-                </article>
+                </details>
 
 
                 <!-- =====================================
                      TRADIÇÕES
                 ====================================== -->
 
-                <article class="info-card">
+                <details class="info-card">
 
-                    <div class="card-title">
+                    <summary class="card-title">
 
                         <span class="icon">
                             03
                         </span>
 
-                        <h3>
+                        <span class="card-heading" role="heading" aria-level="3">
                             PRIMEIRA APARIÇÃO
-                        </h3>
+                        </span>
 
-                    </div>
+                    </summary>
 
 
                     <p id="alienAparicao"></p>
 
-                </article>
+                </details>
 
 
                 <!-- =====================================
                      PREDADOR NATURAL
                 ====================================== -->
 
-                <article class="info-card danger-card">
+                <details class="info-card danger-card">
 
-                    <div class="card-title">
+                    <summary class="card-title">
 
                         <span class="icon">
                             04
                         </span>
 
-                        <h3>
+                        <span class="card-heading" role="heading" aria-level="3">
                             PREDADOR NATURAL
-                        </h3>
+                        </span>
 
-                    </div>
+                    </summary>
 
 
                     <p id="alienPredator"></p>
 
-                </article>
+                </details>
 
 
             </section>
@@ -359,7 +360,7 @@
          JAVASCRIPT
     ========================================== -->
 
-    <script src="./assets/js/script.js?v=15"></script>
+    <script src="./assets/js/script.js?v=17"></script>
 
 </body>
 

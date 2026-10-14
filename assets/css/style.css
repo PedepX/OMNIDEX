@@ -410,10 +410,12 @@ body::before {
 .activation-console {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     width: min(1028px, 90%);
-    height: 52px;
+    min-height: 78px;
     margin: 0 auto 20px;
 }
 
@@ -422,6 +424,7 @@ body::before {
 }
 
 .activation-button {
+    flex: 0 0 auto;
     width: 58px;
     height: 58px;
     border: 7px solid #080808;
@@ -437,6 +440,17 @@ body::before {
         box-shadow 0.2s ease;
 }
 
+.activation-hint {
+    color: var(--green);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.activation-button:disabled + .activation-hint {
+    display: none;
+}
+
 .activation-button:hover:not(:disabled) {
     transform: scale(1.08);
     box-shadow:
@@ -448,6 +462,12 @@ body::before {
 .activation-button:focus-visible {
     outline: 2px solid var(--green);
     outline-offset: 8px;
+}
+
+.navigation-button:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 4px;
+    border-radius: 50%;
 }
 
 .activation-button:disabled {
@@ -1012,6 +1032,8 @@ body::before {
     grid-template-columns:
         repeat(2, 1fr);
 
+    align-items: start;
+
     gap: 18px;
 }
 
@@ -1042,6 +1064,40 @@ body::before {
     transition:
         border-color 0.2s ease,
         transform 0.2s ease;
+}
+
+.info-card:not([open]) {
+    min-height: 0;
+}
+
+.info-card > .card-title {
+    list-style: none;
+    cursor: pointer;
+}
+
+.info-card > .card-title::-webkit-details-marker {
+    display: none;
+}
+
+.info-card > .card-title:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 5px;
+}
+
+.info-card > .card-title::after {
+    content: "+";
+    margin-left: auto;
+    color: var(--green);
+    font-size: 22px;
+    line-height: 1;
+}
+
+.info-card[open] > .card-title::after {
+    content: "-";
+}
+
+.info-card:not([open]) > .card-title {
+    margin-bottom: 0;
 }
 
 
@@ -1106,7 +1162,7 @@ body::before {
 }
 
 
-.card-title h3 {
+.card-title .card-heading {
 
     font-family: "Bangers", Impact, fantasy;
 
@@ -1321,8 +1377,8 @@ body::before {
 
     .omnitrix {
 
-        width: 230px;
-        height: 230px;
+        width: min(230px, calc(92vw - 90px));
+        height: min(230px, calc(92vw - 90px));
 
         margin: auto;
     }
@@ -1339,4 +1395,17 @@ body::before {
         gap: 10px;
     }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .alien-changing {
+        animation-duration: 0.01ms;
+    }
+
+    .navigation-button,
+    .activation-button,
+    .info-card,
+    .alien-display img {
+        transition-duration: 0.01ms;
+    }
 }
