@@ -26,7 +26,7 @@ const aliens = [
             "É uma forma de vida humanoide baseada em plasma de 2 metros de altura, Seu corpo é constituído por um interior de magma brilhante coberta por um vermelho escuro. Seu corpo irradia grandes quantidades de calor. Seus pés têm apenas dois dedos e uma parte traseira pontuda.",
 
         aparicao:
-            "E Então Eram 10 — 1º episódio de Ben 10 (2005). É a primeira aparição do Chama e também a primeira transformação de Ben com o Omnitrix.",
+            "E Então Eram 10 — 1º episódio da 1ª Temporada da série Ben 10 (2005). É a primeira aparição do Chama e também a primeira transformação de Ben com o Omnitrix.",
 
         predador:
             "Siridozer: Predador natural dos Pyronitas. Possui um corpo resistente ao fogo e uma grande força física, usando seu chifre para atacar e quebrar obstáculos. Sua saliva também é resistente às chamas, permitindo apagar o fogo de um Pyronita."
@@ -56,7 +56,7 @@ const aliens = [
             "Besta parece um cão grande e laranja sem olhos e cauda. Seus dentes são muito grandes e ficam fora da sua boca. Ele não possui olhos, em vez disso ele utiliza seu senso de olfato e audição no lugar da visão, que são auxiliados por três narinas localizadas em cada lado de seu pescoço.",
 
         aparicao:
-            "E Então Eram 10 — 1º episódio de Ben 10 (2005). É a primeira aparição do Besta e também uma das primeiras transformações de Ben com o Omnitrix.",
+            "E Então Eram 10 — 1º episódio da 1ª Temporada da série Ben 10 (2005). É a primeira aparição do Besta e também uma das primeiras transformações de Ben com o Omnitrix.",
 
         predador:
             "Não Identificado."
@@ -86,7 +86,7 @@ const aliens = [
             "O corpo de Diamante é composto por um cristal orgânico extremamente resistente, que se assemelham a tadenita, tornando-o quase invulnerável, também possui quatro cristais grandes em suas costas, seu corpo é completamente verde cristalizado.",
 
         aparicao:
-            "E Então Eram 10 — 1º episódio de Ben 10 (2005). É a primeira aparição do Diamante e também uma das primeiras transformações de Ben com o Omnitrix.",
+            "E Então Eram 10 — 1º episódio da 1ª Temporada da série Ben 10 (2005). É a primeira aparição do Diamante e também uma das primeiras transformações de Ben com o Omnitrix.",
 
         predador:
             "Não Identificado."
@@ -116,7 +116,7 @@ const aliens = [
             "XLR8 lembra um Velociraptor semi-blindado. Alienígena esbelto, com braços finos que possuem três garras em cada mão, e duas garras nos pés por cima de bolas pretas que as usa quando corre, além de dar suporte as suas longas pernas. Ele usa um elmo com uma viseira azulada, deixando as outras características de sua cabeça desconhecidas. Sempre que seu  visor não é usado, pode-se ver seu rosto que é azul com olhos verdes e duas listras pretas que os atravessam, além de possuir lábios negros.",
 
         aparicao:
-            "E Então Eram 10 — 1º episódio de Ben 10 (2005). É a primeira aparição do XLR8 e também uma das primeiras transformações de Ben com o Omnitrix.",
+            "E Então Eram 10 — 1º episódio da 1ª Temporada da série Ben 10 (2005). É a primeira aparição do XLR8 e também uma das primeiras transformações de Ben com o Omnitrix.",
 
         predador:
             "Não Identificado."
@@ -145,7 +145,7 @@ const aliens = [
         aparencia:
             "Massa Cinzenta é um alienígena de pele cinza, e semelhante a um sapo humanoide, e tem quinze centímetros de altura.",
 
-        aparicao: "Washington A.C — 2º episódio de Ben 10 (2005).",
+        aparicao: "Washington A.C — 2º episódio da 1ª Temporada da série Ben 10 (2005).",
 
         predador:
             "Omnivorácio: Predador natural dos Galvanianos. Possui grande agilidade, força, voo e dentes afiados, características que lhe permitem caçar os pequenos Galvanianos."
@@ -175,7 +175,7 @@ const aliens = [
             "Quatro Braços é um alienígena humanoide de aproximadamente 3,70 metros de altura, músculos avantajados, dois pares de braços de quatro dedos e pele vermelha bem desenvolvida. A listra preta vai desde o queixo até o lábio inferior, e ele tem quatro olhos: um par principal e um par menor abaixo deles.",
 
         aparicao:
-            "Washington A.C. — 2º episódio de Ben 10 (2005).",
+            "Washington A.C. — 2º episódio da 1ª Temporada da série Ben 10 (2005).",
 
         predador:
             "Grandes criaturas predatórias capazes de sobreviver nas regiões selvagens de Khoros."
@@ -205,7 +205,7 @@ const aliens = [
             "Insectóide é um inseto com quatro longas pernas, e dois braços com mãos pretas, dando uma impressão de que está usando luvas, e três dedos em cada um delas. Sua cabeça é completamente preta, e nela estão ligados quatro olhos pequenos e laranjas. Em suas costas, tem uma grande e frágil asa verde transparente.",
         
         aparicao:
-            "Washington A.C. — 2º episódio de Ben 10 (2005).",
+            "Washington A.C. — 2º episódio da 1ª Temporada da série Ben 10 (2005).",
 
         predador:
             "Lagartóide: Predador natural dos Lepidopterranos, capaz de liberar uma névoa que dissolve a gosma deles, além de possuir grande força, agilidade e garras e dentes afiados.",
@@ -234,7 +234,7 @@ const aliens = [
             "Aquático é um alienígena que podemos nos referir como um tritão, sua cabeça lembra a de um peixe pescador. Ele possui uma forma humanoide que o fornece pés, permitindo sua respiração em terra por alguns minutos, mas também sendo capaz de transformar suas pernas em uma poderosa nadadeira o proporcionando uma excepcional agilidade debaixo d'água mesmo resistindo a forte pressão da água. Ele possui uma luz fosforescente em sua cabeça, o que permite que ele veja em áreas escuras. Seu corpo é coberto de escamas e seus dentes são expostos e são capazes de perfurar o aço facilmente.",
 
         aparicao:
-            "O Krakken",
+            "O Krakken — 3º episódio da 1ª Temporada da série Ben 10 (2005).",
 
         predador:
             "Não Identificado.",
@@ -264,7 +264,7 @@ const aliens = [
             "Ultra T tem sua pele preta com listras verdes que se assemelham a um circuito em cima dele. O círculo verde que se localiza em sua cabeça é o seu olho, que brilha sempre que ele fala. Seu corpo é composto de bilhões de máquinas chamadas de Nanites.",
         
         aparicao:
-            "A Ferro e Fogo — episódio da série Ben 10 (2005).",
+            "Aposentadoria Permanente — 4º episódio da 1ª Temporada da série Ben 10 (2005).",
 
         predador:
             "Não Identificado.",
@@ -293,7 +293,7 @@ const aliens = [
             "Fantasmático é semelhante a um fantasma branco, com linhas pretas passando por seu corpo e seu olho é roxo. Sua cauda lembra bastante uma fumaça, sendo confirmado que inicialmente ele era para ser baseado em um gênio da lâmpada.",
 
         aparicao:
-            "Aposentadoria Permanente — 4º episódio de Ben 10 (2005).",
+            "Aposentadoria Permanente — 4º episódio da 1ª Temporada da série Ben 10 (2005).",
 
         predador:
             "Não Identificado.",
@@ -322,7 +322,7 @@ const aliens = [
         "FrankenStrike possui um corpo humanoide alto e musculoso, pele acinzentada e amarelada, cabelos escuros e olhos verdes sem pupilas. Seu corpo apresenta marcas semelhantes a costuras e parafusos metálicos, além de grandes estruturas nas costas que conduzem e armazenam eletricidade.",
 
     aparicao:
-        "Tenha Medo do Escuro — episódio da série Ben 10 (2005).",
+        "Tenha Medo do Escuro — 13º episódio da 3ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -351,7 +351,7 @@ const aliens = [
         "Snare-Oh possui um corpo humanoide semelhante ao de uma múmia, composto por bandagens que pode controlar e estender. Na versão clássica, apresenta olhos verdes brilhantes, um adereço egípcio preto e dourado na cabeça e acessórios escuros nos braços e nas pernas.",
 
     aparicao:
-        "O Retorno — episódio da série Ben 10 (2005).",
+        "Enrolados — 8º episódio da 3ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -380,7 +380,7 @@ const aliens = [
         "BlitzWolfer possui aparência semelhante à de um lobisomem, com pelagem cinza, focinho alongado, orelhas pontudas e uma cauda espessa. Apresenta três estruturas semelhantes a tendrões na cabeça, garras afiadas e uma boca capaz de emitir poderosas ondas sonoras.",
 
     aparicao:
-        "LobisBen — episódio da série Ben 10 (2005).",
+        "LobisBen — 5º episódio da 3ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -409,7 +409,7 @@ const aliens = [
         "Glutão possui um corpo pequeno e arredondado, pele verde, uma mancha verde-escura no topo da cabeça e seis protuberâncias na parte posterior da cabeça. Seu rosto e sua barriga são verde-claros, possui dentes tortos e salientes e uma cauda. Na série clássica, veste um traje preto aberto na região abdominal, com mangas brancas e faixas brancas nas pernas.",
 
     aparicao:
-        "O Visitante — episódio da série Ben 10 (2005).",
+        "Ben 10 Contra os Estradeiros — 5º episódio da 4ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não possui predadores naturais conhecidos; os Gourmands estão no topo da cadeia alimentar."
@@ -438,7 +438,7 @@ const aliens = [
         "Ditto possui um corpo pequeno e humanoide, pele branca, áreas pretas na cabeça e nos ombros, mãos grandes e três protuberâncias semelhantes a nadadeiras na cabeça. Também apresenta estruturas sensoriais nas laterais do corpo e na cintura, relacionadas à criação de seus clones.",
 
     aparicao:
-        "Divididos Caímos — episódio da série Ben 10 (2005).",
+        "Divididos Conquistamos — 2º episódio da 4ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -467,7 +467,7 @@ const aliens = [
         "Bala de Canhão é um alienígena robusto, de pele predominantemente branca, coberto por placas amarelas de proteção nos ombros, braços e costas. Possui marcas pretas pelo corpo, olhos verdes, garras e dentes afiados. Pode recolher os membros e transformar-se em uma esfera blindada.",
 
     aparicao:
-        "O Grande Carrapato — episódio da série Ben 10 (2005).",
+        "O Grande Carrapato — 2º episódio da 2ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -496,7 +496,7 @@ const aliens = [
         "Cipó Selvagem possui um corpo vegetal verde, com cipós e tentáculos que se estendem a partir do corpo. Tem um único olho, espinhos e sementes explosivas que pode lançar contra seus adversários.",
 
     aparicao:
-        "Acampamento do Medo — episódio da série Ben 10 (2005).",
+        "Acampamento do Medo — 7º episódio da 2ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -525,7 +525,7 @@ const aliens = [
         "Mega Olhos possui um corpo humanoide com pele em tons de marrom e bege, grandes orelhas semelhantes às de um morcego e diversos olhos verdes espalhados pelo tronco e pelos membros. Seu rosto não possui olhos convencionais, concentrando-se principalmente na boca.",
 
     aparicao:
-        "Ben 10 Contra os 10 Negativos: Parte 2 — episódio da série Ben 10 (2005).",
+        "Ben 10 Contra os 10 Negativos: Parte 2 — 9º episódio da 4ª Temporada da série Ben 10 (2005).",
 
     predador:
         "Não identificado."
@@ -554,7 +554,7 @@ const aliens = [
         "Gigante é um ser humanoide colossal, de pele branca e estrutura corporal extremamente robusta. Possui uma grande crista na cabeça, com partes vermelhas e pretas, além de marcas verdes. Seu tamanho e sua força física o tornam capaz de enfrentar ameaças gigantescas.",
 
     aparicao:
-        "Ken 10 — episódio da série Ben 10.000.",
+        "Ben 10: O Segredo do Omnitrix — Filme.",
 
     predador:
         "Não identificado."
