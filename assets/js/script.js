@@ -363,7 +363,7 @@ const aliens = [
 
     especie: "Loboano",
 
-    planeta: "Luna Lobo, lua de Anur Transyl",
+    planeta: "Luna Lobo",
 
     imagem: "./assets/images/Blitzwolfer.webp",
 
