@@ -12,6 +12,7 @@ Enciclopédia alienígena interativa inspirada no universo de Ben 10. Explore os
 - Animações e efeitos sonoros na ativação, transformação, destransformação e navegação.
 - As seções de informação do alien começam recolhidas em qualquer tamanho de tela e podem ser abertas individualmente.
 - Layout responsivo, foco visível para navegação por teclado e suporte à preferência de movimento reduzido do dispositivo.
+- Botão **Recalibrar Omnitrix** com transição animada para o catálogo de *Alien Force*. A página recalibrada reaproveita o fluxo do catálogo clássico: ativação, navegação, transformação e fichas recolhíveis com espécie, planeta, habilidades, aparência, estreia e predador natural.
 
 ### Aliens catalogados
 
@@ -39,6 +40,8 @@ Enciclopédia alienígena interativa inspirada no universo de Ben 10. Explore os
 
 O projeto não precisa de instalação de dependências nem de etapa de build. Abra `index.html` em um navegador ou sirva a pasta do projeto com um servidor web local, como o Laragon.
 
+A tela do Omnitrix Recalibrado também pode ser aberta diretamente em `recalibrado.html`. As imagens e os efeitos sonoros específicos dessa tela ficam, respectivamente, em `assets/images/recalibrado` e `assets/sounds/recalibrado`.
+
 ## Tecnologias
 
 - HTML
@@ -50,20 +53,28 @@ O projeto não precisa de instalação de dependências nem de etapa de build. A
 ```text
 Omnidex/
 ├── index.html
+├── recalibrado.html
 ├── README.md
 └── assets/
     ├── css/
+    │   ├── recalibrado.css
     │   └── style.css
     ├── images/
     │   ├── icon-optimized.png
     │   ├── favicon-omnitrix-optimized.png
     │   ├── omnitrix-optimized.png
     │   ├── omnitrix-transformado-optimized.png
+    │   ├── recalibrado/
+    │   │   ├── artes dos aliens de Força Alienígena (.webp)
+    │   │   └── imagens do Omnitrix Recalibrado
     │   ├── imagens dos aliens (.webp)
     │   └── artes originais preservadas
     ├── js/
+    │   ├── recalibrado.js
     │   └── script.js
     └── sounds/
+        ├── recalibrado/
+        │   └── efeitos sonoros do Omnitrix Recalibrado
         ├── ativaomni.mp3
         ├── desativaromni.mp3
         ├── omnisound.wav
