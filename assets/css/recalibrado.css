@@ -1,0 +1,173 @@
+:root {
+    --green: #a5ff35;
+    --green-dark: #5d9820;
+    --gray-light: #888;
+}
+
+body.recalibrated-page {
+    background:
+        radial-gradient(circle at center, #202020 0%, #0a0a0a 65%, #000 100%);
+}
+
+.recalibrated-page .header {
+    margin-bottom: clamp(20px, 3.5vh, 30px);
+}
+
+.recalibrated-page .classic-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: var(--gray-light);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.recalibrated-page .classic-link:hover,
+.recalibrated-page .classic-link:focus-visible {
+    color: var(--green);
+}
+
+.recalibrated-page .classic-link:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 5px;
+}
+
+.recalibrated-page .omnitrix-image {
+    border-radius: 0;
+    transition: filter 0.25s ease;
+}
+
+.recalibrated-page .alien-display {
+    width: 57%;
+}
+
+.recalibrated-page .alien-reveal-button {
+    position: relative;
+    overflow: visible;
+}
+
+.recalibrated-page #alienImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(165, 255, 53, 0.2));
+}
+
+.recalibrated-page .missing-alien-art {
+    position: absolute;
+    inset: 15%;
+    display: grid;
+    place-items: center;
+    padding: 12px;
+    border: 1px dashed rgba(165, 255, 53, 0.55);
+    border-radius: 50%;
+    background: rgba(5, 5, 5, 0.92);
+    color: var(--green);
+    font-size: clamp(8px, 1.4vw, 11px);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+
+.recalibrated-page .missing-alien-art[hidden] {
+    display: none;
+}
+
+.recalibrated-page .alien-display img[hidden] {
+    display: none;
+}
+
+.recalibrated-page .omnitrix-image.omnitrix-spinning {
+    animation: recalibratedSpin var(--change-duration, 1536ms) ease-in-out;
+}
+
+.recalibrated-page .omnitrix-image.omnitrix-activating {
+    animation: recalibratedActivation var(--activation-duration, 2040ms) ease-in-out;
+}
+
+.recalibrated-page .omnitrix-image.omnitrix-deactivation-glow {
+    animation: recalibratedDeactivation var(--deactivation-duration, 2232ms) ease-in-out;
+}
+
+.recalibrated-page .selector-area.is-activated .navigation-button,
+.recalibrated-page .selector-area.is-activated .alien-display {
+    animation-duration: var(--activation-duration, 2040ms);
+}
+
+.recalibrated-page .transformation-flash.is-active,
+.recalibrated-page .transformation-flash.is-active::before,
+.recalibrated-page .transformation-flash.is-active::after,
+.recalibrated-page #alienInfo.alien-info-revealing {
+    animation-duration: var(--transformation-duration, 2040ms);
+}
+
+.recalibrated-page .identity {
+    margin-top: 20px;
+}
+
+.recalibrated-page .footer {
+    margin-top: 26px;
+}
+
+@keyframes recalibratedSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes recalibratedActivation {
+    0%, 100% {
+        filter: drop-shadow(0 0 0 rgba(165, 255, 53, 0));
+        transform: scale(1);
+    }
+
+    18%, 52%, 82% {
+        filter:
+            drop-shadow(0 0 14px rgba(165, 255, 53, 0.95))
+            drop-shadow(0 0 28px rgba(165, 255, 53, 0.55));
+        transform: scale(1.035);
+    }
+
+    35%, 68% {
+        filter: drop-shadow(0 0 2px rgba(165, 255, 53, 0.2));
+        transform: scale(1);
+    }
+}
+
+@keyframes recalibratedDeactivation {
+    0%, 100% {
+        filter: none;
+    }
+
+    25%, 70% {
+        filter:
+            drop-shadow(0 0 12px rgba(255, 69, 58, 0.95))
+            drop-shadow(0 0 26px rgba(255, 30, 20, 0.65));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .recalibrated-page .omnitrix-image.omnitrix-spinning,
+    .recalibrated-page .omnitrix-image.omnitrix-activating,
+    .recalibrated-page .omnitrix-image.omnitrix-deactivation-glow {
+        animation-duration: 0.01ms;
+    }
+
+    .recalibrated-page .selector-area.is-activated .navigation-button,
+    .recalibrated-page .selector-area.is-activated .alien-display,
+    .recalibrated-page .transformation-flash.is-active,
+    .recalibrated-page .transformation-flash.is-active::before,
+    .recalibrated-page .transformation-flash.is-active::after,
+    .recalibrated-page #alienInfo.alien-info-revealing {
+        animation-duration: 0.01ms;
+    }
+
+    .recalibrated-page .classic-link,
+    .recalibrated-page .omnitrix-image {
+        transition-duration: 0.01ms;
+    }
+}

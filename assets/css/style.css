@@ -131,6 +131,136 @@ body {
         inset 0 0 28px rgba(255, 69, 58, 0.7);
 }
 
+.recalibration-transition[hidden] {
+    display: none;
+}
+
+.recalibration-transition {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle, rgba(168, 255, 0, 0.3), transparent 48%),
+        #050705;
+    color: var(--green);
+    font-size: clamp(12px, 2vw, 18px);
+    font-weight: 700;
+    letter-spacing: 0.32em;
+    text-align: center;
+    animation: recalibrationCurtain 1.4s ease-in both;
+}
+
+.recalibration-transition::before,
+.recalibration-transition::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: min(70vw, 70vh);
+    aspect-ratio: 1;
+    border: 1px solid rgba(168, 255, 0, 0.78);
+    border-radius: 50%;
+    box-shadow:
+        0 0 35px rgba(168, 255, 0, 0.35),
+        inset 0 0 35px rgba(168, 255, 0, 0.2);
+    transform: translate(-50%, -50%);
+    animation: recalibrationPulse 1.4s ease-in-out both;
+}
+
+.recalibration-transition::after {
+    width: min(38vw, 38vh);
+    border-style: dashed;
+    animation-name: recalibrationSpin;
+}
+
+.recalibration-transition span {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 18px var(--green);
+    animation: recalibrationText 1.4s ease-in both;
+}
+
+body.is-recalibrating .app {
+    animation: classicInterfaceExit 1.4s ease-in both;
+}
+
+@keyframes recalibrationCurtain {
+    0% {
+        opacity: 0;
+    }
+
+    18%, 76% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.96;
+    }
+}
+
+@keyframes recalibrationPulse {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.08);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.18;
+        transform: translate(-50%, -50%) scale(1.35);
+    }
+}
+
+@keyframes recalibrationSpin {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(0) scale(0.25);
+    }
+
+    25% {
+        opacity: 0.9;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+    }
+}
+
+@keyframes recalibrationText {
+    0%, 100% {
+        opacity: 0;
+        letter-spacing: 0.7em;
+    }
+
+    30%, 75% {
+        opacity: 1;
+        letter-spacing: 0.32em;
+    }
+}
+
+@keyframes classicInterfaceExit {
+    0% {
+        filter: none;
+        transform: scale(1);
+    }
+
+    50% {
+        filter: brightness(1.7) saturate(1.5);
+    }
+
+    100% {
+        filter: brightness(0.2) saturate(1.4);
+        transform: scale(0.94);
+    }
+}
+
 @keyframes transformationFlash {
 
     0%, 100% {
@@ -245,7 +375,12 @@ body {
     .transformation-flash.is-active.is-deactivating,
     .transformation-flash.is-active::before,
     .transformation-flash.is-active::after,
-    #alienInfo.alien-info-revealing {
+    #alienInfo.alien-info-revealing,
+    .recalibration-transition,
+    .recalibration-transition::before,
+    .recalibration-transition::after,
+    .recalibration-transition span,
+    body.is-recalibrating .app {
         animation-duration: 0.01ms;
     }
 }
@@ -345,6 +480,40 @@ body::before {
     letter-spacing: 5px;
 
     font-size: 11px;
+}
+
+.recalibrate-entry {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 18px;
+    padding: 10px 16px;
+    border: 1px solid rgba(168, 255, 0, 0.48);
+    background: rgba(8, 18, 0, 0.72);
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-decoration: none;
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.recalibrate-entry span {
+    font-size: 15px;
+}
+
+.recalibrate-entry:hover {
+    background: rgba(30, 54, 0, 0.9);
+    box-shadow: 0 0 18px rgba(168, 255, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.recalibrate-entry:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 4px;
 }
 
 
@@ -1404,6 +1573,7 @@ body::before {
 
     .navigation-button,
     .activation-button,
+    .recalibrate-entry,
     .info-card,
     .alien-display img {
         transition-duration: 0.01ms;

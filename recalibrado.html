@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Explore os dez aliens iniciais do Omnitrix Recalibrado."
+    >
+    <meta name="theme-color" content="#080808">
+    <title>Omnidex | Omnitrix Recalibrado</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-omnitrix-optimized.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./assets/css/style.css?v=14">
+    <link rel="stylesheet" href="./assets/css/recalibrado.css?v=3">
+</head>
+
+<body class="recalibrated-page">
+    <div
+        class="transformation-flash"
+        id="transformationFlash"
+        aria-hidden="true"
+    ></div>
+
+    <main class="app">
+        <header class="header">
+            <div class="header-line"></div>
+            <h1>
+                <img
+                    class="brand-logo"
+                    src="./assets/images/icon-optimized.png"
+                    alt="Omnidex"
+                >
+            </h1>
+            <p>RECALIBRANDO OMNITRIX</p>
+            <div class="header-line"></div>
+            <a class="classic-link" href="./index.html">
+                <span aria-hidden="true">←</span>
+                VOLTAR AO OMNITRIX ORIGINAL
+            </a>
+        </header>
+
+        <section class="selector-area" id="selectorArea" aria-label="Seletor de aliens">
+            <button
+                class="navigation-button left"
+                id="previousButton"
+                type="button"
+                aria-label="Alien anterior"
+                disabled
+            >
+                <span class="arrow-shape" aria-hidden="true">←</span>
+            </button>
+
+            <div class="omnitrix">
+                <audio
+                    id="alienChangeSound"
+                    src="./assets/sounds/recalibrado/omnisound.mp3"
+                    preload="auto"
+                ></audio>
+                <audio
+                    id="alienRevealSound"
+                    src="./assets/sounds/recalibrado/omnitrixtransform.mp3"
+                    preload="auto"
+                ></audio>
+                <audio
+                    id="omnitrixActivationSound"
+                    src="./assets/sounds/recalibrado/omnitrixativa.mp3"
+                    preload="auto"
+                ></audio>
+                <audio
+                    id="alienDeactivationSound"
+                    src="./assets/sounds/recalibrado/omnitrixoff.mp3"
+                    preload="auto"
+                ></audio>
+
+                <img
+                    class="omnitrix-image"
+                    id="omnitrixImage"
+                    src="./assets/images/recalibrado/OmnitrixRecalibrado.PNG"
+                    alt="Omnitrix Recalibrado"
+                >
+
+                <div class="alien-display">
+                    <button
+                        class="alien-reveal-button"
+                        id="alienRevealButton"
+                        type="button"
+                        aria-controls="alienInfo"
+                        aria-expanded="false"
+                        aria-label="Transformar em Fogo Fátuo"
+                        title="Clique para se transformar"
+                        disabled
+                    >
+                        <img id="alienImage" src="./assets/images/recalibrado/FogoFátuo.webp" alt="Fogo Fátuo">
+                        <span class="missing-alien-art" id="missingAlienArt" hidden>ARTE INDISPONÍVEL</span>
+                    </button>
+                </div>
+            </div>
+
+            <button
+                class="navigation-button right"
+                id="nextButton"
+                type="button"
+                aria-label="Próximo alien"
+                disabled
+            >
+                <span class="arrow-shape" aria-hidden="true">→</span>
+            </button>
+        </section>
+
+        <div class="activation-console" id="activationConsole">
+            <button
+                class="activation-button"
+                id="activationButton"
+                type="button"
+                aria-label="Ativar Omnitrix Recalibrado"
+                aria-pressed="false"
+                title="Ativar Omnitrix Recalibrado"
+            ></button>
+            <span class="activation-hint">ATIVAR OMNITRIX</span>
+        </div>
+
+        <div id="alienInfo" hidden>
+            <section class="identity">
+                <span class="category">ALIEN SELECIONADO</span>
+                <h2 id="alienName"></h2>
+                <div class="identity-data">
+                    <div>
+                        <span>ESPÉCIE</span>
+                        <strong id="alienSpecies"></strong>
+                    </div>
+                    <div>
+                        <span>PLANETA</span>
+                        <strong id="alienPlanet"></strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="information" aria-label="Informações do alien">
+                <details class="info-card">
+                    <summary class="card-title">
+                        <span class="icon">01</span>
+                        <span class="card-heading" role="heading" aria-level="3">HABILIDADES</span>
+                    </summary>
+                    <ul id="alienAbilities"></ul>
+                </details>
+
+                <details class="info-card">
+                    <summary class="card-title">
+                        <span class="icon">02</span>
+                        <span class="card-heading" role="heading" aria-level="3">APARÊNCIA</span>
+                    </summary>
+                    <p id="alienAppearance"></p>
+                </details>
+
+                <details class="info-card">
+                    <summary class="card-title">
+                        <span class="icon">03</span>
+                        <span class="card-heading" role="heading" aria-level="3">PRIMEIRA APARIÇÃO</span>
+                    </summary>
+                    <p id="alienAppearanceEpisode"></p>
+                </details>
+
+                <details class="info-card danger-card">
+                    <summary class="card-title">
+                        <span class="icon">04</span>
+                        <span class="card-heading" role="heading" aria-level="3">PREDADOR NATURAL</span>
+                    </summary>
+                    <p id="alienPredator"></p>
+                </details>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <span id="alienCounter"></span>
+            <span>© 2026 — OMNIDEX. Todos os direitos reservados.</span>
+            <span class="status">● SYSTEM ONLINE</span>
+        </footer>
+    </main>
+
+    <script src="./assets/js/recalibrado.js?v=3"></script>
+</body>
+
+</html>

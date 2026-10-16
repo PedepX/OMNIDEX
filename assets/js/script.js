@@ -641,9 +641,16 @@ const activationConsole =
 const selectorArea =
     document.querySelector(".selector-area");
 
+const recalibrateButton =
+    document.getElementById("recalibrateButton");
+
+const recalibrationTransition =
+    document.getElementById("recalibrationTransition");
+
 let omnitrixActivated = false;
 let alienTransformed = false;
 let deactivationInProgress = false;
+let recalibrationInProgress = false;
 
 /* =========================================================
    MOSTRAR ALIEN
@@ -1043,6 +1050,31 @@ previousButton.addEventListener(
 alienRevealButton.addEventListener(
     "click",
     toggleAlienTransformation
+);
+
+recalibrateButton.addEventListener(
+    "click",
+    event => {
+        event.preventDefault();
+        if (recalibrationInProgress) {
+            return;
+        }
+
+        recalibrationInProgress = true;
+        recalibrateButton.setAttribute("aria-disabled", "true");
+        recalibrationTransition.hidden = false;
+        document.body.classList.add("is-recalibrating");
+
+        const transitionDuration = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches
+            ? 20
+            : 1400;
+
+        window.setTimeout(() => {
+            window.location.assign(recalibrateButton.href);
+        }, transitionDuration);
+    }
 );
 
 
