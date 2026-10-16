@@ -17,7 +17,7 @@ const aliens = [
         aparicao:
             "O Retorno de Ben 10: Parte 1 — 1º episódio de Ben 10: Força Alienígena (2008). É a primeira aparição do Fogo Fátuo e a primeira transformação de Ben com o Omnitrix recalibrado.",
         predador:
-            "A wiki registra que os Metanosianos têm um predador natural, mas não informa qual."
+            "Não Identificado"
     },
     {
         nome: "Eco Eco",
