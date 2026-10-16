@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1] - 2026-10-16
+
+### Adicionado
+
+- Protocolo técnico de desbloqueio do Alien X em duas etapas, com sequências aleatórias de quatro teclas A, S e D e controles na tela.
+- Indicador de progresso das duas chaves; erros reiniciam somente a etapa atual.
+- Animação especial de desbloqueio com hélice de DNA holográfica animada sobre o Omnitrix; as conexões permanecem alinhadas às fitas durante o movimento, e partículas convergem para o símbolo antes da revelação cósmica, acompanhada de áudio.
+- Persistência do desbloqueio do Alien X no navegador.
+
+### Melhorado
+
+- Alien X bloqueado no seletor até a conclusão do protocolo; após liberado, usa o fluxo normal de transformação e informações.
+- Falhas na reprodução do áudio especial não impedem o desbloqueio.
+
 ## [1.0.0] - 2026-10-16
 
 ### Adicionado

@@ -19,7 +19,7 @@
         rel="stylesheet"
     >
     <link rel="stylesheet" href="./assets/css/style.css?v=14">
-    <link rel="stylesheet" href="./assets/css/recalibrado.css?v=3">
+    <link rel="stylesheet" href="./assets/css/recalibrado.css?v=10">
 </head>
 
 <body class="recalibrated-page">
@@ -28,6 +28,88 @@
         id="transformationFlash"
         aria-hidden="true"
     ></div>
+    <div
+        class="alien-x-awakening"
+        id="alienXAwakening"
+        role="status"
+        aria-live="assertive"
+        aria-atomic="true"
+        aria-hidden="true"
+        hidden
+    >
+        <div class="alien-x-dna" aria-hidden="true">
+            <svg viewBox="0 0 160 420" role="presentation">
+                <defs>
+                    <linearGradient id="alienXDnaGlow" x1="0" x2="1" y1="0" y2="0">
+                        <stop offset="0" stop-color="#a5ff35" stop-opacity="0.2"></stop>
+                        <stop offset="0.5" stop-color="#f2ff70"></stop>
+                        <stop offset="1" stop-color="#a5ff35" stop-opacity="0.3"></stop>
+                    </linearGradient>
+                </defs>
+                <path
+                    id="alienXDnaStrandLeft"
+                    class="alien-x-dna-strand"
+                    d="M40 0 C120 34 120 70 80 105 S40 175 80 210 S120 280 80 315 S40 385 80 420"
+                ></path>
+                <path
+                    id="alienXDnaStrandRight"
+                    class="alien-x-dna-strand alien-x-dna-strand-secondary"
+                    d="M120 0 C40 34 40 70 80 105 S120 175 80 210 S40 280 80 315 S120 385 80 420"
+                ></path>
+                <g class="alien-x-dna-rungs"></g>
+                <g class="alien-x-dna-particles">
+                    <circle r="4">
+                        <animateMotion dur="2.2s" repeatCount="indefinite">
+                            <mpath href="#alienXDnaStrandLeft"></mpath>
+                        </animateMotion>
+                    </circle>
+                    <circle r="3">
+                        <animateMotion dur="2.8s" begin="-1.1s" repeatCount="indefinite">
+                            <mpath href="#alienXDnaStrandRight"></mpath>
+                        </animateMotion>
+                    </circle>
+                    <circle r="2.5">
+                        <animateMotion dur="3.1s" begin="-0.6s" repeatCount="indefinite">
+                            <mpath href="#alienXDnaStrandLeft"></mpath>
+                        </animateMotion>
+                    </circle>
+                    <circle r="3.5">
+                        <animateMotion dur="2.6s" begin="-1.7s" repeatCount="indefinite">
+                            <mpath href="#alienXDnaStrandRight"></mpath>
+                        </animateMotion>
+                    </circle>
+                    <circle r="2">
+                        <animateMotion dur="3.4s" begin="-2.2s" repeatCount="indefinite">
+                            <mpath href="#alienXDnaStrandLeft"></mpath>
+                        </animateMotion>
+                    </circle>
+                </g>
+            </svg>
+            <span class="alien-x-dna-label">ANÁLISE GENÉTICA</span>
+        </div>
+        <div class="alien-x-target" aria-hidden="true">
+            <svg viewBox="0 0 100 100" role="presentation">
+                <circle cx="50" cy="50" r="43"></circle>
+                <circle class="alien-x-target-inner" cx="50" cy="50" r="32"></circle>
+                <path d="M34 26 L50 36 L66 26 L62 48 L74 62 L54 64 L50 82 L44 64 L26 62 L38 48 Z"></path>
+                <path class="alien-x-target-core" d="M50 36 L50 64 M36 49 L64 49"></path>
+            </svg>
+        </div>
+        <span class="alien-x-energy-particle alien-x-energy-particle-one" aria-hidden="true"></span>
+        <span class="alien-x-energy-particle alien-x-energy-particle-two" aria-hidden="true"></span>
+        <span class="alien-x-energy-particle alien-x-energy-particle-three" aria-hidden="true"></span>
+        <span class="alien-x-energy-particle alien-x-energy-particle-four" aria-hidden="true"></span>
+        <span class="alien-x-energy-particle alien-x-energy-particle-five" aria-hidden="true"></span>
+        <span class="alien-x-energy-particle alien-x-energy-particle-six" aria-hidden="true"></span>
+        <div class="alien-x-cosmos">
+            <span class="alien-x-ring alien-x-ring-outer"></span>
+            <span class="alien-x-ring alien-x-ring-inner"></span>
+            <span class="alien-x-star alien-x-star-one"></span>
+            <span class="alien-x-star alien-x-star-two"></span>
+            <img src="./assets/images/recalibrado/AlienX.webp" alt="">
+        </div>
+        <p class="alien-x-awakening-message">ANÁLISE GENÉTICA EM CURSO</p>
+    </div>
 
     <main class="app">
         <header class="header">
@@ -79,6 +161,11 @@
                     src="./assets/sounds/recalibrado/omnitrixoff.mp3"
                     preload="auto"
                 ></audio>
+                <audio
+                    id="alienXTransformationSound"
+                    src="./assets/sounds/recalibrado/AlienXTransformation.mp3"
+                    preload="auto"
+                ></audio>
 
                 <img
                     class="omnitrix-image"
@@ -100,6 +187,15 @@
                     >
                         <img id="alienImage" src="./assets/images/recalibrado/FogoFátuo.webp" alt="Fogo Fátuo">
                         <span class="missing-alien-art" id="missingAlienArt" hidden>ARTE INDISPONÍVEL</span>
+                        <span class="alien-x-lock" id="alienXLock" hidden>
+                            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                                <rect x="5" y="14" width="22" height="16" rx="3"></rect>
+                                <path d="M10 14V9a6 6 0 0 1 12 0v5"></path>
+                                <circle cx="16" cy="21" r="2"></circle>
+                                <path d="M16 23v3"></path>
+                            </svg>
+                            <span>ALIEN X BLOQUEADO</span>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -127,7 +223,44 @@
             <span class="activation-hint">ATIVAR OMNITRIX</span>
         </div>
 
-        <div id="alienInfo" hidden>
+        <section class="alien-x-game" id="alienXGame" tabindex="-1" aria-labelledby="alienXGameTitle" hidden>
+            <span class="category">PROTOCOLO DE ACESSO</span>
+            <h2 id="alienXGameTitle">AUTENTIQUE AS DUAS CHAVES</h2>
+            <p class="alien-x-game-instructions">
+                Repita a sequência de teclas para autenticar cada chave do Omnitrix.
+            </p>
+            <ol class="alien-x-progress" aria-label="Progresso do protocolo">
+                <li class="alien-x-progress-step" id="alienXProgressOne" aria-current="step">
+                    <span class="alien-x-progress-number">01</span>
+                    <span>CHAVE PRIMÁRIA</span>
+                    <span class="alien-x-progress-state" id="alienXProgressOneState">EM ANDAMENTO</span>
+                </li>
+                <li class="alien-x-progress-step" id="alienXProgressTwo">
+                    <span class="alien-x-progress-number">02</span>
+                    <span>CHAVE SECUNDÁRIA</span>
+                    <span class="alien-x-progress-state" id="alienXProgressTwoState">AGUARDANDO</span>
+                </li>
+            </ol>
+            <p class="alien-x-game-status" id="alienXGameStatus" aria-live="polite">
+                Aguarde a sequência...
+            </p>
+            <div class="alien-x-keys" role="group" aria-label="Teclas de autenticação">
+                <button class="alien-x-key" type="button" data-alien-x-key="a" aria-label="Pressionar tecla A">
+                    <kbd>A</kbd>
+                </button>
+                <button class="alien-x-key" type="button" data-alien-x-key="s" aria-label="Pressionar tecla S">
+                    <kbd>S</kbd>
+                </button>
+                <button class="alien-x-key" type="button" data-alien-x-key="d" aria-label="Pressionar tecla D">
+                    <kbd>D</kbd>
+                </button>
+            </div>
+            <button class="alien-x-cancel" id="alienXCancelButton" type="button">
+                CANCELAR PROTOCOLO
+            </button>
+        </section>
+
+        <div id="alienInfo" tabindex="-1" hidden>
             <section class="identity">
                 <span class="category">ALIEN SELECIONADO</span>
                 <h2 id="alienName"></h2>
@@ -185,7 +318,7 @@
         </footer>
     </main>
 
-    <script src="./assets/js/recalibrado.js?v=3"></script>
+    <script src="./assets/js/recalibrado.js?v=11"></script>
 </body>
 
 </html>
