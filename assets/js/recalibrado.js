@@ -7,16 +7,17 @@ const aliens = [
         planeta: "Methanos",
         imagem: "./assets/images/recalibrado/FogoFátuo.webp",
         habilidades: [
-            "Pirocinese e projeção de fogo",
-            "Regeneração por meio de plantas",
-            "Controle e crescimento de vegetação",
-            "Força e resistência aprimoradas"
+            "Controla o fogo e a vegetação, podendo acelerar o crescimento de plantas",
+            "Regenera o corpo e libera metano ou gás sonífero",
+            "Alongamento e elasticidade corporal",
+            "Imunidade ao fogo"
         ],
         aparencia:
-            "Um ser vegetal humanoide de pele verde, com partes do corpo cobertas por casca e folhagem. A cabeça é envolta por chamas que ele pode controlar.",
+            "Planta humanoide de pele verde e rosto escuro, cercado por estruturas vermelhas e amarelas que lembram chamas. Tem pés semelhantes a raízes, pétalas vermelhas nos ombros e espinhos nos braços e nas pernas.",
         aparicao:
-            "Ben 10: Força Alienígena — \"Ben 10 Returns: Part 1\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "O Retorno de Ben 10: Parte 1 — 1º episódio de Ben 10: Força Alienígena (2008). É a primeira aparição do Fogo Fátuo e a primeira transformação de Ben com o Omnitrix recalibrado.",
+        predador:
+            "A wiki registra que os Metanosianos têm um predador natural, mas não informa qual."
     },
     {
         nome: "Eco Eco",
@@ -24,16 +25,15 @@ const aliens = [
         planeta: "Sonorosia",
         imagem: "./assets/images/recalibrado/EcoEco.webp",
         habilidades: [
-            "Duplicação em múltiplas cópias",
-            "Gritos e ondas sonoras de alta intensidade",
-            "Imunidade a ataques sonoros",
-            "Coordenação entre suas duplicatas"
+            "Emite gritos e ondas sonoras de alta intensidade",
+            "Cria cópias de si mesmo",
+            "Usa ecolocalização",
         ],
         aparencia:
-            "Pequeno alienígena branco, de corpo compacto e cabeça arredondada. Usa um dispositivo semelhante a um amplificador nas costas para canalizar seus gritos sônicos.",
+            "Pequeno humanoide branco feito de silicone, com o corpo parecido com um amplificador. Possui um apêndice semelhante a um aparelho de música nas costas e faixas que lembram fitas cassete nas pernas.",
         aparicao:
-            "Ben 10: Força Alienígena — \"Ben 10 Returns: Part 1\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "O Retorno de Ben 10: Parte 2 — 2º episódio de Ben 10: Força Alienígena (2008). É a primeira aparição do Eco Eco e uma das primeiras transformações de Ben com o Omnitrix recalibrado.",
+        predador: "Não Identificado"
     },
     {
         nome: "Enormossauro",
@@ -41,16 +41,16 @@ const aliens = [
         planeta: "Terradino",
         imagem: "./assets/images/recalibrado/Enormossauro.webp",
         habilidades: [
-            "Superforça",
-            "Aumento de tamanho e força",
-            "Resistência física elevada",
-            "Cauda poderosa para combate"
+            "Superforça e resistência aprimorada",
+            "Agilidade e capacidade de salto aprimoradas",
+            "Pode crescer e aumentar ainda mais sua força",
+            "Emite um rugido poderoso"
         ],
         aparencia:
-            "Dinossauro humanoide de grande porte, com pele marrom, placas ósseas e uma cauda longa. Pode crescer até atingir proporções gigantescas.",
+            "Dinossauro humanoide de pele marrom e resistente. Ao crescer, destaca ainda mais suas placas semelhantes às de um estegossauro nas costas, na cabeça e na cauda.",
         aparicao:
-            "Ben 10: Força Alienígena — \"Ben 10 Returns: Part 1\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "O Retorno de Ben 10: Parte 2 — 2º episódio de Ben 10: Força Alienígena (2008). É a primeira aparição do Enormossauro e uma das primeiras transformações de Ben com o Omnitrix recalibrado.",
+        predador: "Tyranópode, predador natural dos Vaxasaurianos."
     },
     {
         nome: "Arraia-a-Jato",
@@ -58,16 +58,15 @@ const aliens = [
         planeta: "Aeropela",
         imagem: "./assets/images/recalibrado/ArraiaJato.webp",
         habilidades: [
-            "Voo em alta velocidade",
-            "Propulsão a jato",
-            "Natação e deslocamento subaquático",
-            "Disparos de energia neurochoque"
+            "Voo e natação em supervelocidade",
+            "Dispara raios pelos olhos e pela cauda",
+            "Sobrevive no espaço"
         ],
         aparencia:
-            "Alienígena aerodinâmico com asas largas, corpo vermelho e amarelo e chifres curvados. As barbatanas permitem que voe e também se mova com facilidade na água.",
+            "Humanoide vermelho com aparência de arraia, olhos verdes e chifres amarelos entre eles. Tem marcas escuras no torso, estruturas semelhantes a guelras sob os braços e asas amarelas ligadas aos braços, usadas para voar e deslizar na água.",
         aparicao:
-            "Ben 10: Força Alienígena — \"Everybody Talks About the Weather\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "Tempo Fechado — 3º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Não Identificado"
     },
     {
         nome: "Friagem",
@@ -75,17 +74,16 @@ const aliens = [
         planeta: "Kylmyys",
         imagem: "./assets/images/recalibrado/Friagem.webp",
         habilidades: [
-            "Criocinese e sopro congelante",
-            "Voo por meio de asas",
-            "Intangibilidade",
-            "Invisibilidade",
-            "Respiração e sobrevivência no vácuo"
+            "Criocinese",
+            "Voa e pode levitar",
+            "Atravessa objetos ao tornar-se intangível",
+            "Sobrevive no espaço e respira debaixo d'água",
         ],
         aparencia:
-            "Ser alado de aparência espectral, com corpo azul-escuro e marcas ciano brilhantes. Suas asas lembram uma capa e podem se fechar ao redor do corpo.",
+            "Humanoide semelhante a uma mariposa, de corpo escuro com marcas ciano. Suas quatro asas e antenas podem se dobrar como um manto com capuz, dando-lhe aparência fantasmagórica.",
         aparicao:
-            "Ben 10: Força Alienígena — \"Kevin's Big Score\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "Uma Artimanha do Kevin — 4º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Hipnótico, predador natural dos Necrofriggianos."
     },
     {
         nome: "Ártropode",
@@ -93,16 +91,16 @@ const aliens = [
         planeta: "Encephalonus IV",
         imagem: "./assets/images/recalibrado/Artropode.webp",
         habilidades: [
-            "Intelecto e processamento mental excepcionais",
-            "Manipulação e projeção de eletricidade",
-            "Criação de campos de força",
-            "Respiração subaquática"
+            "Superinteligência, telepatia e telecinesia",
+            "Gera e controla eletricidade e campos de força",
+            "Levitação e escalada em paredes",
+            "Pinças fortes"
         ],
         aparencia:
-            "Pequeno ser crustáceo com um cérebro exposto protegido por uma carapaça. Possui grandes pinças e se desloca sobre várias pernas.",
+            "Crustáceo laranja semelhante a um caranguejo, com cabeça oval e uma faixa escura que separa a região do cérebro dos olhos e da boca. Tem duas grandes pinças e três pares de pernas.",
         aparicao:
-            "Ben 10: Força Alienígena — \"Pier Pressure\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "Confusão no Cais — 7º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Vicetopus, predador natural dos Cerebrocrustaceanos."
     },
     {
         nome: "Macaco-Aranha",
@@ -110,16 +108,15 @@ const aliens = [
         planeta: "Aranhaschimmia",
         imagem: "./assets/images/recalibrado/MacacoAranha.webp",
         habilidades: [
-            "Agilidade e reflexos aprimorados",
-            "Escalada em superfícies",
-            "Disparo de teias pegajosas",
-            "Força e coordenação aprimoradas"
+            "Dispara teias e adere a superfícies sólidas",
+            "Audição aprimorada",
+            "Reflexos aprimorados"
         ],
         aparencia:
-            "Alienígena azul de corpo semelhante ao de um macaco, com quatro braços, cauda preênsil e mãos e pés adaptados para escalar.",
+            "Macaco de pelo azul com quatro braços, quatro olhos escuros contornados de verde e cauda preta com duas listras azuis. Uma marca escura em forma de raio cruza o torso.",
         aparicao:
-            "Ben 10: Força Alienígena — \"What Are Little Girls Made Of?\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "Do que são Feitas as Garotinhas? — 8º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Tubarão de Raiz, predador natural dos Arachnachimp."
     },
     {
         nome: "Gosma",
@@ -127,17 +124,16 @@ const aliens = [
         planeta: "Viscosia",
         imagem: "./assets/images/recalibrado/Gosma.webp",
         habilidades: [
-            "Corpo líquido e maleável",
-            "Mudança de forma",
+            "Muda de forma e controla a viscosidade do corpo",
             "Regeneração",
-            "Levitação controlada por um projetor antigravitacional",
-            "Projeção de ácido"
+            "Produz e projeta limo, inclusive ácido",
+            "O projetor antigravitacional controla seus movimentos"
         ],
         aparencia:
-            "Massa de gosma verde capaz de assumir formas variadas. Um disco tecnológico flutua acima dele e mantém seu corpo unido por meio de um campo antigravitacional.",
+            "Ser humanoide feito de gosma. Usa um projetor antigravitacional para controlar os movimentos do corpo e conseguir falar.",
         aparicao:
-            "Ben 10: Força Alienígena — \"The Gauntlet\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "A Manopla — 9º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Não Identificado."
     },
     {
         nome: "Cromático",
@@ -145,33 +141,32 @@ const aliens = [
         planeta: "Mor'Otesi",
         imagem: "./assets/images/recalibrado/Cromático.webp",
         habilidades: [
-            "Absorção e redirecionamento de energia",
-            "Disparos de energia",
-            "Criação de construções cristalinas",
-            "Corpo cristalino resistente"
+            "Absorve, desvia e projeta energia; também absorve mana",
+            "Gera luz, raios ultravioletas, arco-íris e campos de força",
+            "Voa e regenera o corpo",
+            "Resiste a calor, radiação, eletricidade e possessão"
         ],
         aparencia:
-            "Ser de aparência cristalina, com corpo escuro e cristais roxos e magenta que se projetam da cabeça, dos ombros e dos braços.",
+            "Humanoide de cristal à base de silício, com corpo púrpura marcado por linhas escuras. Tem rosto e mãos magenta, um olho verde central e cristais magenta nas costas, no peito e no alto da cabeça.",
         aparicao:
-            "Ben 10: Força Alienígena — \"All That Glitters\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "Nem Tudo Que Reluz... — 5º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Não Identificado"
     },
     {
         nome: "Alien X",
-        especie: "Celestialsapien",
-        planeta: "Forge of Creation",
+        especie: "Sapien Celestial",
+        planeta: "Centro da Criação",
         imagem: "./assets/images/recalibrado/AlienX.webp",
         habilidades: [
-            "Manipulação da realidade e do espaço-tempo",
-            "Força e durabilidade extraordinárias",
-            "Criação e alteração de matéria",
-            "Deslocamento pelo espaço"
+            "Deforma a realidade, o espaço e o tempo",
+            "Pode criar ou destruir um universo",
+            "É capaz de realizar praticamente qualquer coisa que consiga imaginar"
         ],
         aparencia:
-            "Humanoide negro coberto por pontos brancos semelhantes a estrelas, com marcas claras nos braços e no rosto e olhos verdes luminosos.",
+            "Humanoide negro salpicado de pontos brancos que lembram estrelas, com três saliências na testa e olhos verdes sem pupilas. O símbolo do Omnitrix fica no peito.",
         aparicao:
-            "Ben 10: Força Alienígena — \"X = Ben + 2\" (estreia da forma).",
-        predador: "Não identificado no catálogo."
+            "X = Ben + 2 — 39º episódio de Ben 10: Força Alienígena (2008).",
+        predador: "Não Identificado."
     }
 ];
 
