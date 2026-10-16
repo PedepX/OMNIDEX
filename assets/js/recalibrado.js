@@ -209,6 +209,8 @@ const recalibratedWatchIdle =
     "./assets/images/recalibrado/OmnitrixRecalibrado.PNG";
 const recalibratedWatchActive =
     "./assets/images/recalibrado/OmnitrixRecalibradoAtivado.webp";
+const recalibratedWatchTransformed =
+    "./assets/images/recalibrado/OmnitrixTransformado.png";
 
 function getSoundDurationMs(audio, fallbackDurationMs) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -238,12 +240,16 @@ function showAlien(animateOmnitrix = false) {
     selectorArea.classList.remove("is-transformed");
     alienInfo.hidden = true;
     activationConsole.hidden = false;
-    omnitrixImage.src = omnitrixActivated
-        ? recalibratedWatchActive
-        : recalibratedWatchIdle;
-    omnitrixImage.alt = omnitrixActivated
-        ? "Omnitrix Recalibrado ativado"
-        : "Omnitrix Recalibrado";
+    omnitrixImage.src = alienTransformed
+        ? recalibratedWatchTransformed
+        : omnitrixActivated
+            ? recalibratedWatchActive
+            : recalibratedWatchIdle;
+    omnitrixImage.alt = alienTransformed
+        ? "Omnitrix Recalibrado transformado"
+        : omnitrixActivated
+            ? "Omnitrix Recalibrado ativado"
+            : "Omnitrix Recalibrado";
     alienRevealButton.setAttribute("aria-expanded", "false");
     alienRevealButton.setAttribute("aria-label", `Transformar em ${alien.nome}`);
     alienRevealButton.title = "Clique para se transformar";
@@ -408,8 +414,8 @@ function toggleAlienTransformation() {
         "omnitrix-activating",
         "omnitrix-spinning"
     );
-    omnitrixImage.src = recalibratedWatchActive;
-    omnitrixImage.alt = "Omnitrix Recalibrado ativado";
+    omnitrixImage.src = recalibratedWatchTransformed;
+    omnitrixImage.alt = "Omnitrix Recalibrado transformado";
     alienRevealButton.setAttribute("aria-expanded", "true");
     alienRevealButton.setAttribute(
         "aria-label",
