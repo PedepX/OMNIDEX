@@ -1,4 +1,4 @@
-it# Omnidex
+### OMNIDEX
 
 Enciclopédia alienígena interativa inspirada no universo de Ben 10. Explore os aliens catalogados no Omnitrix e descubra informações sobre suas espécies, planetas, habilidades, aparência, primeira aparição e predadores naturais.
 
